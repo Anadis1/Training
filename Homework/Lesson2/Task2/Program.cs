@@ -7,7 +7,6 @@ Console.Write("Введите число - ");
 string temporary = Console.ReadLine();
 int number = Convert.ToInt32(temporary);
 
-int index = 0;
 int length = 0;                     // Количество цифр в числе
 int temporarynunber = number;
 int figure = 0;
@@ -20,6 +19,7 @@ while(temporarynunber > 0)          // Определяем длинну чис�
 
 if(length > 2)
 {
+    int index = 0;
     while(index < length - 2)
     {
         figure = number % 10;
