@@ -18,7 +18,7 @@ void PrintArrey(double[] Arrey)		            // Показывает в терм
     Console.Write($"Массив --> ");
     for (int i = 0; i < Arrey.Length; i++)
     {
-        System.Console.Write($"\t{Arrey[i]}");
+        System.Console.Write($"\t{Arrey[i]:f1}");
     }
 }
 
@@ -41,4 +41,4 @@ for (int i = 0; i < list1.Length; i++)
 
 }
 
-System.Console.WriteLine($"\nМинимальное число в массиве ---> {min}\nМаксимальное число в массиве ---> {max}\nРазница между максимальным и минимальным числом ---> {max - min}");
+System.Console.WriteLine($"\nМинимальное число в массиве ---> {min:f1}\nМаксимальное число в массиве ---> {max:f1}\nРазница между максимальным и минимальным числом ---> {max - min:f1}");
