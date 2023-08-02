@@ -18,4 +18,13 @@ int sumNum(int arg)
 }
 
 int number1 = ReadInt("Введите число  --- ");
-System.Console.WriteLine(sumNum(number1));
+
+if (number1 < 0)
+{
+    number1 = number1 * -1;
+    System.Console.WriteLine(sumNum(number1));
+}
+else
+{
+    System.Console.WriteLine(sumNum(number1));
+}
