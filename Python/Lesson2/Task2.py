@@ -24,10 +24,3 @@ def fibonachi_find(n):
 
 n = int(input('Введите число ->'))
 print(fibonachi_find(n))
-
-
-
-
-
-else:
-    print("Введено не верное число")
