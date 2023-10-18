@@ -1,27 +1,22 @@
-package homwork1;
+package homwork2;
 
-class BankAccount {      //Счет в банке
-    private Integer balance;
-
-    public BankAccount(){
+public class FixedAmountAccount extends AbstractBankAccount {
+    public FixedAmountAccount() {
         this.balance = 0;
     }
-    public BankAccount(int balance){
+    public FixedAmountAccount(int balance){
         this.balance = balance;
     }
-    public Integer getAmount(){    // Вывод баланса
-        return balance;
-    }
+    @Override
     public void setPut(int put){    // Пополнение с проверкой на положительные числа
         if (put > 0) {
-            this.balance = this.balance + put;
         } else {
             throw new IllegalArgumentException("Некорректная сумма");
         }
     }
+    @Override
     public void setTake(int take){  // Снятие с проверкой на положительные числа
         if(take > 0){
-            this.balance = this.balance - take;
         }
         else{
             throw new IllegalArgumentException("Некорректная сумма");

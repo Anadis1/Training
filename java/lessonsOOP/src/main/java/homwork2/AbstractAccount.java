@@ -1,12 +1,12 @@
-package homwork1;
+package homwork2;
 
-class BankAccount {      //Счет в банке
-    private Integer balance;
+public abstract class AbstractAccount{  //implements BankAccount
+    public Integer balance;
 
-    public BankAccount(){
+    public AbstractAccount(){
         this.balance = 0;
     }
-    public BankAccount(int balance){
+    public AbstractAccount(int balance){
         this.balance = balance;
     }
     public Integer getAmount(){    // Вывод баланса

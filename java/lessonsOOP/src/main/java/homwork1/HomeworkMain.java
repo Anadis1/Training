@@ -18,11 +18,11 @@ package homwork1;
  * (Для дат лучше использовать LocalDate, пример в классе Dates в проекте урока)
  */
 
-public class HomeworkMain {
+class HomeworkMain {
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount(47000);           //Счет в банке
         System.out.println("Баланс счета - " + bankAccount.getAmount());
-        bankAccount.setPut(3000);       // Пополняем
+        bankAccount.setPut(3000);       // Пополнение
         System.out.println("Баланс счета - " + bankAccount.getAmount());
         bankAccount.setTake(14000);      // Снятие
         System.out.println("Баланс счета - " + bankAccount.getAmount());

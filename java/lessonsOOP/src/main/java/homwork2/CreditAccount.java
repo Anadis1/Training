@@ -1,8 +1,8 @@
-package homwork1;
+package homwork2;
 
-class CreditAccount extends BankAccount{     // Кредит
 
-    private Integer balance;
+class CreditAccount extends AbstractBankAccount {     // Кредит
+
     public CreditAccount() {
         this.balance = 0;
     }
