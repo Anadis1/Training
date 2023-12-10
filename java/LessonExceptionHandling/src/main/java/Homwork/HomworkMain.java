@@ -38,11 +38,11 @@ public class HomworkMain {
         String gender = "";
         String dateOfBirth = "";
         String phoneNumber = "";
-//        System.out.printf("Введите данные через пробел - Фамилия Имя Отчество дата рождения номертелефона пол \n");
-//        Scanner scanner = new Scanner(System.in);
-//        String newInput = scanner.nextLine();
-//        scanner.close();
-        String newInput = "Филимонов Николый Александрович 01.01.2000 88888888888 f";
+        System.out.printf("Введите данные через пробел - Фамилия Имя Отчество дата рождения номертелефона пол \n");
+        Scanner scanner = new Scanner(System.in);
+        String newInput = scanner.nextLine();
+        scanner.close();
+//        String newInput = "Филимонов Николый Александрович 01.01.2000 88888888888 f";
         String[] stringsArray = newInput.split(" ");
         if (stringsArray.length != 6) {
             throw new IOException("Введено данных - " + stringsArray.length + " требуется - " + 6);
