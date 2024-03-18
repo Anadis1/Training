@@ -6,7 +6,6 @@ CREATE PROCEDURE counter (n INT)
 BEGIN
 	DECLARE i VARCHAR(20) DEFAULT '';
     DECLARE ind INT DEFAULT 0;
-    DECLARE num INT DEFAULT 0;
 	WHILE (ind < n - 1) DO
 		SET ind = ind + 2;
 		SET i = CONCAT(i, ' ', ind) ;
